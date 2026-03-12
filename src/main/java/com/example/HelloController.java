@@ -16,7 +16,7 @@ public class HelloController {
         String remote = request.getRemoteAddr();
         String local = request.getLocalAddr();
         log.info("Solicitud /hello recibida desde {}", remote);
-        String response = "Hola Mundo desde " + local;
+        String response = "Hola Mundo v2 desde " + local;
         log.info("Respuesta /hello enviada hacia {}", remote);
         return response;
     }
